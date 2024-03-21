@@ -417,7 +417,7 @@ body.active
     transform: translateY(-1%);
   }
   80% {
-    transform: translateY(10%);
+    transform: translateY(6%);
   }
   100% {
     transform: translateY(0);
@@ -428,6 +428,12 @@ body.active
 .section.hero {
   animation: fadeIn 1s ease-in-out;
 }
+
+.section.about {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
 
 .section-title,
 .section-text,
@@ -1050,6 +1056,11 @@ body.active
   .navbar-list { display: flex; }
 
   .navbar-item { border: none; }
+
+  .navbar-item .active{
+    font-weight: bold;
+    color: #007bff;
+  }
 
   .navbar-link {
     text-transform: uppercase;
