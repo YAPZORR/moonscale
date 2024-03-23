@@ -242,7 +242,7 @@ body.active
   gap: 30px;
 }
 
-.card-text { font-size: 20px; }
+.card-text { font-size: 16px; }
 
 
 .btn-link {
@@ -586,10 +586,20 @@ body.active
   height: 380px;
  
 }
+.service-card1 {
+  background-color: var(--white);
+  padding: 50px 30px;
+  border-radius: 10px;
+  
+  height: 280px;
+ 
+}
 .service-card:hover{
   background-color: #f0f7ff;
 }
-
+.service-card1:hover{
+  background-color: #f0f7ff;
+}
 
 
 .service-card .card-title {
@@ -599,6 +609,15 @@ body.active
   
   
 }
+
+.service-card1 .card-title {
+  margin-block: 35px 20px;
+  transition: var(--transition-1);
+  text-align: left;
+  
+  
+}
+
 
 .service-card .card-title:is(:hover, :focus) { color: black; }
 
@@ -644,7 +663,7 @@ body.active
   font-size: 26px;
 }
 .card-text p {
-  font-size: small;
+  font-size: 15px;
 }
 
 
@@ -1289,3 +1308,127 @@ body {
   margin-bottom: 40px;
 }
 
+/* testimonials */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  box-sizing: border-box;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  color: #333;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%; /* Adjusted width for smaller screens */
+  max-width: 800px; /* Added max-width for larger screens */
+  min-height: 430px;
+  position: relative;
+  border: 1px solid #eee;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: var(--shadow-2);
+}
+
+.stars {
+  font-size: 14px;
+}
+
+.testimonial {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 38px;
+  margin: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  text-align: center;
+}
+
+.user .username {
+  margin: 0;
+  font-size: 14px;
+}
+
+.user .role {
+  margin: 0;
+  font-size: 12px;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.progress-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.progress-dot.active {
+  background-color: #555;
+}
+
+.btn2 {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.btn2:hover {
+  background-color: #18aaff;
+}
+
+#btn-prev {
+  left: 5%;
+}
+
+#btn-next {
+  right: 5%;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .testimonial-container {
+    width: 95%;
+  }
+}
