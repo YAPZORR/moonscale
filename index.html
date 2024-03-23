@@ -9,8 +9,7 @@
     - primary meta tags
   -->
     <title>Moonscale</title>
-    <meta name="title" content="Scale Your Business With Our Premium
-      Facebook Ad Accounts by Moonscale" />
+    <meta name="title" content="dprod - Digital product design agency" />
     <meta
       name="description"
       content="Scale Your Business With Our Premium
@@ -555,6 +554,61 @@
           </div>
         </section>
 
+        <!-- HTML -->
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <div class="vertical-videos">
+              <div class="video-wrapper">
+                <video
+                  id="video1"
+                  width="300"
+                  height="500"
+                  controls
+                  poster="assets/video/Poster2.png"
+                >
+                  <source src="./assets/video/video2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <button class="play-button" onclick="playPause('video1')">
+                  Play
+                </button>
+              </div>
+              <div class="video-wrapper video2">
+                <video
+                  id="video2"
+                  width="300"
+                  height="500"
+                  controls
+                  poster="assets/video/poster1.png"
+                >
+                  <source src="./assets/video/video1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <button class="play-button" onclick="playPause('video2')">
+                  Play
+                </button>
+              </div>
+
+              <div class="video-wrapper">
+                <img src="./assets/video/8ladw9bz69s61.webp" alt="" />
+              </div>
+            </div>
+            <div class="sticky">
+              <h2 class="section-title1">Hear From Our Clients...</h2>
+              <p class="section-text saying">
+                "In the dynamic world of digital marketing, Facebook remains a
+                cornerstone platform for businesses to reach their target
+                audience effectively. Are you looking to maximize your
+                advertising potential on Facebook? Look no further! Our platform
+                offers you the opportunity to purchase Facebook Ads accounts and
+                Business Managers, enabling you to expand your advertising reach
+                and scale your marketing efforts efficiently." <br />
+                <span class="names">NAME | COMPANY</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
         <div class="accordion">
           <h1>Frequently Asked Questions</h1>
           <div class="accordion-item">
@@ -607,46 +661,24 @@
               appealed, we will replace your ad account free of charge.
             </div>
           </div>
+
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion5" />
+            <label for="accordion5" class="accordion-item-title"
+              ><span class="icon"></span>I have another question that's not
+              listed here.</label
+            >
+            <div class="accordion-item-desc">
+              Feel free to
+              <span class="contact" style="display: inline-block"
+                ><a href="contact.html">Contact Us</a></span
+              >
+              and we will get back to you ASAP!
+            </div>
+          </div>
         </div>
 
         <!-- testimonial -->
-
-        <div class="testimonial-container">
-          <div class="btn2" id="btn-prev">
-            <i class="fa-solid fa-chevron-left"></i>
-          </div>
-          <div class="btn2" id="btn-next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p class="testimonial">
-            I've worked with literally hundreds of HTML/CSS developers and I
-            have to say the top spot goes to this guy. This guy is an amazing
-            developer. He stresses on good, clean code and pays heed to the
-            details. I love developers who respect each and every aspect of a
-            throughly thought out design and do their best to put it in code. He
-            goes over and beyond and transforms ART into PIXELS - without a
-            glitch, every time.
-          </p>
-          <div class="user">
-            <img
-              src="https://randomuser.me/api/portraits/women/46.jpg"
-              alt="user"
-              class="user-image"
-            />
-            <div class="user-details">
-              <h4 class="username">Miyah Myles</h4>
-              <p class="role">Marketing</p>
-            </div>
-          </div>
-          <div class="progress-dots" id="progress-dots"></div>
-        </div>
       </article>
     </main>
 
@@ -895,7 +927,32 @@ player@latest/dist/lottie-player.js"></script>
       });
 
       displayTestimonial();
+
+      function playPause(videoId) {
+        var video = document.getElementById(videoId);
+        var playButton = video.nextElementSibling;
+
+        if (video.paused || video.ended) {
+          video.play();
+          playButton.style.display = "none";
+        } else {
+          video.pause();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var videos = document.getElementsByTagName("video");
+
+        for (var i = 0; i < videos.length; i++) {
+          videos[i].addEventListener("play", function () {
+            this.nextElementSibling.style.display = "none";
+          });
+
+          videos[i].addEventListener("pause", function () {
+            this.nextElementSibling.style.display = "block";
+          });
+        }
+      });
     </script>
   </body>
 </html>
- 
