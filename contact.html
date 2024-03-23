@@ -166,87 +166,56 @@
           </div>
         </div>
       </div>
-
       <div class="accordion">
         <h1>Frequently Asked Questions</h1>
         <div class="accordion-item">
           <input type="checkbox" id="accordion1" />
           <label for="accordion1" class="accordion-item-title"
-            ><span class="icon"></span>What is SEO, and why is it important for
-            online businesses?</label
+            ><span class="icon"></span>Why should I get my Facebook ad accounts
+            from you guys?</label
           >
           <div class="accordion-item-desc">
-            SEO, or Search Engine Optimization, is the practice of optimizing a
-            website to improve its visibility on search engines like Google. It
-            involves various techniques to enhance a site's ranking in search
-            results. SEO is crucial for online businesses as it helps drive
-            organic traffic, increases visibility, and ultimately leads to
-            higher conversions.
+            No top-up fees, being able to link your own credit card to ad
+            accounts, 24/7 customer support, unlimited daily spend limit, and
+            quick onboarding are some of the many reasons that we are highly
+            acclaimed by other Meta advertisers.
           </div>
         </div>
 
         <div class="accordion-item">
           <input type="checkbox" id="accordion2" />
           <label for="accordion2" class="accordion-item-title"
-            ><span class="icon"></span>How long does it take to see results from
-            SEO efforts?</label
+            ><span class="icon"></span>What payment options are
+            available?</label
           >
           <div class="accordion-item-desc">
-            The timeline for seeing results from SEO can vary based on several
-            factors, such as the competitiveness of keywords, the current state
-            of the website, and the effectiveness of the SEO strategy.
-            Generally, it may take several weeks to months before noticeable
-            improvements occur. However, long-term commitment to SEO is
-            essential for sustained success.
+            We accept a wide variety of payments including: credit card, wire
+            transfer, PayPal, and various cryptocurrencies.
           </div>
         </div>
 
         <div class="accordion-item">
           <input type="checkbox" id="accordion3" />
           <label for="accordion3" class="accordion-item-title"
-            ><span class="icon"></span>What are the key components of a
-            successful SEO strategy?</label
+            ><span class="icon"></span>I'm doing black-hat marketing / gambling
+            / Crypto. Can I use your services?</label
           >
           <div class="accordion-item-desc">
-            A successful SEO strategy involves various components, including
-            keyword research, on-page optimization, quality content creation,
-            link building, technical SEO, and user experience optimization.
-            These elements work together to improve a website's relevance and
-            authority in the eyes of search engines.
+            We only accept white-hat businesses and websites that conform to
+            Facebook ad policies.
           </div>
         </div>
 
         <div class="accordion-item">
           <input type="checkbox" id="accordion4" />
           <label for="accordion4" class="accordion-item-title"
-            ><span class="icon"></span>How does mobile optimization impact
-            SEO?</label
+            ><span class="icon"></span>What happens if my ad account becomes
+            restricted?</label
           >
           <div class="accordion-item-desc">
-            Mobile optimization is crucial for SEO because search engines
-            prioritize mobile-friendly websites. With the increasing use of
-            smartphones, search engines like Google consider mobile
-            responsiveness as a ranking factor. Websites that provide a seamless
-            experience on mobile devices are more likely to rank higher in
-            search results.
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <input type="checkbox" id="accordion5" />
-          <label for="accordion5" class="accordion-item-title"
-            ><span class="icon"></span>What is the role of backlinks in SEO, and
-            how can they be acquired?</label
-          >
-          <div class="accordion-item-desc">
-            Backlinks, or inbound links from other websites to yours, play a
-            significant role in SEO. They are considered a vote of confidence
-            and can improve a site's authority. Quality over quantity is crucial
-            when acquiring backlinks. Strategies for obtaining backlinks include
-            creating high-quality content, guest posting, reaching out to
-            industry influencers, and participating in community activities.
-            It's important to focus on natural and ethical link-building
-            practices.
+            If your ad account becomes restricted, we will immediately file to
+            appeal the decision. If by some chance, the decision is not
+            appealed, we will replace your ad account free of charge.
           </div>
         </div>
       </div>
@@ -398,5 +367,41 @@
     <script src="./app.js"></script>
     <!--  Component : Footer -->
     <script src="./components/Footer.js"></script>
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Include SweetAlert library -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.querySelector(
+          'form[data-form-id="836929dd-04d3-4cc4-8a93-5aad9518577d"]'
+        );
+        if (form) {
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+            Swal.fire({
+              // Show SweetAlert confirmation
+              title: "Submit Form?",
+              text: "Are you sure you want to submit this form?",
+              icon: "info",
+              showCancelButton: true,
+              confirmButtonText: "Yes, submit it!",
+              cancelButtonText: "Cancel",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                // If user confirms, submit the form
+                hbspt.forms.submit({
+                  portalId: "45563141",
+                  formId: "836929dd-04d3-4cc4-8a93-5aad9518577d",
+                });
+              }
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
