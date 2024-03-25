@@ -396,7 +396,7 @@ body {
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 5.2rem;
     line-height: 60px;
     
   }
@@ -457,10 +457,10 @@ body {
     margin-top: 50px;
   }
 
- @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     
     .container1{
-      margin-top: 1px;
+      margin-top: 0;
     }
   }
 .button-container1 {
