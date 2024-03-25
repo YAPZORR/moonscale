@@ -456,7 +456,7 @@ body {
   .container1{
     margin-top: 50px;
   }
-.button-container {
+.button-container1 {
     display: flex;
     gap: 15px; /* Adjust the gap as needed */
 }
@@ -1493,7 +1493,14 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 10px; /* Adjust as needed */
 }
 .video2 {
-  left: 20%;
+  left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .video2 {
+    left: 0;
+  }
+  
 }
 .video-wrapper {
   position: relative;
@@ -1537,4 +1544,25 @@ video:not(:hover) + .play-button {
   .video-wrapper {
     max-width: 300px; /* Adjust for larger screens */
   }
+}
+
+/* Adjustments for small screens */
+@media (max-width: 576px) {
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 100%;
+    padding: 2px 50px;
+  }
+  .col-md-3{
+    width: 80%;
+  }
+  .gap{
+    margin-top: 20%;
+  }
+  
 }
