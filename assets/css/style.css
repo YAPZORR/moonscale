@@ -176,6 +176,11 @@ body {
   color: #007bff;
 }
 
+.container1 .span{
+  color: #007bff;
+
+}
+
 .section-text { font-size: var(--fs-3); }
 
 .btn {
@@ -404,14 +409,7 @@ body {
 }
 
 /* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 /* Bounce animation */
 @keyframes bounceFromBottom {
@@ -437,6 +435,8 @@ body {
 .section.about {
   animation: fadeIn 1s ease-in-out;
 }
+
+
 
 
 
@@ -549,6 +549,10 @@ body {
 
 .hero-content{
  
+}
+
+.headline2{
+  margin-top: 9%;
 }
 
 
@@ -1579,3 +1583,6 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
 }
+
+
+/* scroll aniamtion */
