@@ -46,6 +46,7 @@
     - preload images
   -->
     <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <style></style>
@@ -85,12 +86,6 @@
                 >Contact Us</a
               >
             </li>
-
-            <li class="navbar-item">
-              <div class="site-header__end">
-                <a target="_blank" href="https://calendly.com/blee25/15min?month=2024-03">Book A Call</a>
-              </div>
-            </li>
           </ul>
         </nav>
 
@@ -114,7 +109,7 @@
 
         <section class="section about" id="about" aria-label="about">
           <div class="container gap">
-            <div class="about-content">
+            <div class="about-content" data-aos="zoom-out-right">
               <h2 class="section-title1">Who is Moonscale?</h2>
 
               <p class="section-text">
@@ -127,12 +122,13 @@
               </p>
 
               <button class="btn hero-btn btn-primary">
-                <a target="_blank" href="https://calendly.com/blee25/15min?month=2024-03">Book A Call</a>
+                <a href="index.html#contact">Get Started</a>
               </button>
             </div>
 
             <figure class="about-banner has-shape">
               <img
+                data-aos="zoom-out-left"
                 src="https://i.ibb.co/yyq5JG6/Newsletter-2-1.png"
                 width="500"
                 height="511"
@@ -143,10 +139,16 @@
           </div>
         </section>
 
-        <section class="section about" id="about" aria-label="about">
+        <section
+          class="section about"
+          id="about"
+          aria-label="about"
+          data-aos="zoom-out-right"
+        >
           <div class="container">
             <figure class="about-banner has-shape">
               <img
+                data-aos="zoom-out-right"
                 src="https://i.ibb.co/t8CCM1T/image-2-4.png"
                 width="500"
                 height="511"
@@ -154,7 +156,7 @@
                 class="w-100"
               />
             </figure>
-            <div class="about-content">
+            <div class="about-content" data-aos="zoom-out-left">
               <h2 class="section-title1">Our Mission:</h2>
 
               <p class="section-text">
@@ -165,7 +167,7 @@
               </p>
 
               <button class="btn hero-btn btn-primary">
-                <a target="_blank" href="https://calendly.com/blee25/15min?month=2024-03">Book A Call</a>
+                <a href="index.html#contact">Get Started</a>
               </button>
             </div>
           </div>
@@ -173,7 +175,11 @@
 
         <div class="accordion">
           <h1>Frequently Asked Questions</h1>
-          <div class="accordion-item">
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <input type="checkbox" id="accordion1" />
             <label for="accordion1" class="accordion-item-title"
               ><span class="icon"></span>Why should I get my Facebook ad
@@ -187,7 +193,11 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <input type="checkbox" id="accordion2" />
             <label for="accordion2" class="accordion-item-title"
               ><span class="icon"></span>What payment options are
@@ -199,7 +209,11 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <input type="checkbox" id="accordion3" />
             <label for="accordion3" class="accordion-item-title"
               ><span class="icon"></span>I'm doing black-hat marketing /
@@ -211,7 +225,11 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <input type="checkbox" id="accordion4" />
             <label for="accordion4" class="accordion-item-title"
               ><span class="icon"></span>What happens if my ad account becomes
@@ -224,7 +242,27 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <input type="checkbox" id="accordion6" />
+            <label for="accordion6" class="accordion-item-title"
+              ><span class="icon"></span>How much are your services?</label
+            >
+            <div class="accordion-item-desc">
+              Our pricing is contingent on your monthly ad spend. Contact us to
+              get a quote. Rest assured as we are fully transparent with no
+              hidden fees/setup costs/top-up fees.
+            </div>
+          </div>
+
+          <div
+            class="accordion-item"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <input type="checkbox" id="accordion5" />
             <label for="accordion5" class="accordion-item-title"
               ><span class="icon"></span>I have another question that's not
@@ -251,7 +289,7 @@
         <div class="footer-top section">
           <div class="footer-brand">
             <br />
-            <a href="#" class="logo">
+            <a href="#about" class="logo">
               <img
                 src="https://i.postimg.cc/8cycxfxv/Untitled-design-6.png"
                 width="149"
@@ -267,7 +305,7 @@
 
             <ul class="social-list">
               <li>
-                <a href="#" class="social-link">
+                <a href="https://t.me/moonscale" class="social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="26"
@@ -284,7 +322,10 @@
               </li>
 
               <li>
-                <a href="#" class="social-link">
+                <a
+                  href="https://wa.me/message/HGPWDMXSQ22NB1"
+                  class="social-link"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="26"
@@ -319,7 +360,9 @@
           <ul class="footer-list">
             <br />
             <li>
-              <a target="_blank" href="https://calendly.com/blee25/15min?month=2024-03" class="h4 footer-link">Book A Call</a>
+              <a href="index.html#contact" class="h4 footer-link"
+                >Get Started</a
+              >
             </li>
           </ul>
         </div>
@@ -331,9 +374,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 
     - custom js link
+    
   -->
     <script src="./assets/js/script.js" defer></script>
 
@@ -352,6 +397,8 @@
 player@latest/dist/lottie-player.js"></script>
     <script src="js/header-8.js"></script>
 
-    <script></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
